@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Language Translator with Gestures</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Language Translator with Gestures</h1>
+    <div class="input-section">
+      <textarea id="textInput" placeholder="Type your text here..."></textarea>
+      <button id="voiceInputButton">🎤 Speak</button>
+      <br>
+      <input type="file" id="imageInput" accept="image/*">
+      <button id="processImageButton">📷 Process Image</button>
+    </div>
+    <div class="output-section">
+      <h2>Translation:</h2>
+      <div id="output"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

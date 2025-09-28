@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5372F0">
+    <title>SpeakBridge</title>
+
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #5372F0;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        footer {
+            background-color: #5372F0;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .navbar {
+            background-color: #5372F0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            padding: 10px;
+        }
+
+        .home-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .home-section p {
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .iframe-container {
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            border: none;
+            display: none; /* Hidden by default */
+        }
+
+        .loading-indicator {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .error-message {
+            text-align: center;
+            color: red;
+            margin-top: 20px;
+            display: none;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .navbar a {
+                font-size: 14px;
+            }
+
+            .home-section p {
+                font-size: 16px;
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                font-size: 12px;
+            }
+
+            .home-section p {
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 18px;
+            }
+        }
+
+        body {
+            background-image: url('image.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the MRIT SpeakBridge App</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" onclick="navigate('home')" id="homeLink">Home</a>
+        <a href="#" onclick="navigate('texttranslator/index.html')">Text Translator</a>
+        <a href="#" onclick="navigate('signtranslator/index.html')">Text To Sign Translator</a>
+        <a href="#" onclick="navigate('speechtranslator/index.html')">Speech Translator</a>
+        <a href="#" onclick="navigate('imagetranslators/index.html')">Image Translators</a>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="content">
+        <div class="home-section" id="homeSection">
+            <!-- <h2>Welcome to MRIT SpeakBridge</h2> -->
+            <p>Translate text, signs, and speech effortlessly with our innovative tools.</p>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div class="loading-indicator" id="loadingIndicator">Loading...</div>
+
+        <!-- Error Message -->
+        <p class="error-message" id="errorMessage">Sorry, the content could not be loaded. Please try again later.</p>
+
+        <!-- Iframe for Loading Dynamic Content -->
+        <iframe class="iframe-container" id="websiteFrame" title="App Content"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="footerYear"></span> SpeakBridge App | <a href="https://example.com">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Ensure the year in the footer is dynamic
+        document.getElementById("footerYear").textContent = new Date().getFullYear();
+
+        // Navigation logic
+        function navigate(target) {
+            const homeSection = document.getElementById("homeSection");
+            const iframe = document.getElementById("websiteFrame");
+            const loadingIndicator = document.getElementById("loadingIndicator");
+            const errorMessage = document.getElementById("errorMessage");
+
+            document.querySelectorAll('.navbar a').forEach(link => link.classList.remove('active'));
+
+            if (target === 'home') {
+                document.getElementById("homeLink").classList.add('active');
+                homeSection.style.display = "block";
+                iframe.style.display = "none";
+                loadingIndicator.style.display = "none";
+                errorMessage.style.display = "none";
+            } else {
+                homeSection.style.display = "none";
+                iframe.style.display = "block";
+                loadingIndicator.style.display = "block";
+                errorMessage.style.display = "none";
+
+                iframe.src = target;
+                iframe.onload = () => {
+                    loadingIndicator.style.display = "none";
+                };
+                iframe.onerror = () => {
+                    iframe.style.display = "none";
+                    loadingIndicator.style.display = "none";
+                    errorMessage.style.display = "block";
+                };
+            }
+        }
+
+        // Initialize the page with the home section visible
+        document.addEventListener("DOMContentLoaded", () => navigate('home'));
+    </script>
+</body>
+</html>

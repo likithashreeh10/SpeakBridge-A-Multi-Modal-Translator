@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <widget
+        android-versionCode ='1'
+        id='com.mrit.languagetranslator'
+        version='1.0.0'
+        xmlns ='https://www.w3.org/ns/widgets'>
+
+
+        <name>SpeakBridge</name>
+        <description>SpeakBridge is an innovative, multi-functional language translation app designed to break down communication barriers. It combines a variety of translation tools to cater to different user needs, including text, sign language, speech, and image-based translation. Whether you're a student, traveler, or professional, SpeakBridge offers a simple, seamless way to translate and understand different languages in various formats.</description>
+        <author>mrit</author>
+
+    <!-- <preference name ='orientation' value = 'portrait'/> -->
+
+    </widget>

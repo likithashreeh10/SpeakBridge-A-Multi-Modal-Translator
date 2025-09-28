@@ -1,0 +1,141 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  #textInput {
+    width: 80%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    min-height: 80px;
+    resize: none;
+  }
+  
+  #voiceInputButton,
+  #processImageButton {
+    padding: 12px 18px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #voiceInputButton:hover,
+  #processImageButton:hover {
+    background-color: #45a049;
+  }
+  
+  #imageInput {
+    margin-top: 20px;
+  }
+  
+  .output-section {
+    margin-top: 40px;
+  }
+  
+  #output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .sign {
+    display: inline-block;
+    width: 150px; /* Size of the gesture images */
+    height: 150px;
+    text-align: center;
+  }
+  
+  .sign img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .sign .space {
+    font-size: 50px;
+    color: #888;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  /* Styling for File Input */
+  input[type="file"] {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Placeholder Styling (if image not found) */
+  img[alt='undefined'] {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    object-fit: contain;
+  }
+  
+  /* Button Styles for Input Controls */
+  button {
+    padding: 12px 25px;
+    background-color: #6188b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Input Section Buttons */
+  #voiceInputButton {
+    background-color: #28a745;
+  }
+  
+  #processImageButton {
+    background-color: #ffc107;
+  }
+  
+  #voiceInputButton:hover {
+    background-color: #218838;
+  }
+  
+  #processImageButton:hover {
+    background-color: #e0a800;
+  }

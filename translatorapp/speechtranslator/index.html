@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Translator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="translator">
+    <h1>Voice Translator</h1>
+    <br>
+    <label for="input-lang-select">Input Language:</label>
+    <select id="input-lang-select">
+      <option value="en-US">English</option>
+      <option value="es-ES">Spanish</option>
+      <option value="fr-FR">French</option>
+      <option value="de-DE">German</option>
+      <option value="hi-IN">Hindi</option>
+      <option value="kn-IN">Kannada</option>
+      <option value="ko-KN">Korea</option>
+      <option value="zh-CN">Chinese (Simplified)</option>
+      <option value="ja-JP">Japanese</option>
+      <option value="ta-LK">Tamil</option>
+      <option value="te-IN">Telugu</option>
+      <option value="th-TH">Thai</option>
+      <option value="vi-VN">Vietnamese</option>
+      <option value="la-VA">Lation</option>
+      
+    </select>
+    <br>
+    <br>
+    <label for="language-select">Output Language:</label>
+    <select id="language-select">
+        <option value="ko-KN">Korean</option>
+      <option value="es">Spanish</option>
+      <option value="kn-IN">Kannada</option>
+      <option value="en-US">English</option>
+      <option value="fr">French</option>
+      <option value="de">German</option>
+      <option value="hi">Hindi</option>
+      <option value="zh-CN">Chinese (Simplified)</option>
+      <option value="ja-JP">Japanese</option>
+      <option value="ta-LK">Tamil</option>
+      <option value="te-IN">Telugu</option>
+      <option value="th-TH">Thai</option>
+      <option value="vi-VN">Vietnamese</option>
+      <option value="la-VA">Latin</option>
+    </select>
+    <br>
+    <br>
+
+    <button id="start-btn">🎙 Start Listening</button>
+    <p id="input-text">Input: <span class="text"></span></p>
+    <p id="output-text">Translation: <span class="text"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

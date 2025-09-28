@@ -1,0 +1,171 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  background: #5372F0;
+}
+.container {
+  max-width: 690px;
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .text-input {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+}
+.text-input textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  padding: 15px;
+  background: #f9f9f9;
+}
+.text-input textarea::placeholder {
+  color: #b7b6b6;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+.controls .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+.controls .row select {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  background: #f9f9f9;
+  color: #333;
+}
+.controls .row .icons {
+  display: flex;
+  gap: 10px;
+}
+.controls .row .icons i {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.controls .exchange {
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+.controls .exchange:hover {
+  transform: rotate(180deg);
+}
+.container button {
+  width: 100%;
+  padding: 14px;
+  background: #5372F0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.container button:hover {
+  background: #415cc6;
+}
+
+/* Scrollbar Styling */
+.text-input textarea::-webkit-scrollbar {
+  width: 6px;
+}
+.text-input textarea::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .controls {
+    gap: 15px;
+  }
+  .wrapper .text-input textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .controls .row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+  .controls .exchange {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  .wrapper .text-input textarea {
+    font-size: 14px;
+    height: 180px;
+  }
+  .controls {
+    gap: 10px;
+  }
+  .controls .row select {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .controls .row .icons {
+    justify-content: center;
+    gap: 5px;
+  }
+  .container button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

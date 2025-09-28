@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: white;
+  color: #333;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Labels, Inputs, Selects, and Buttons */
+label, select, input, button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Boxed Output Containers */
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Text Display Areas (Extracted and Translated Text) */
+#extracted-text, #translated-text {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#extracted-text h2, #translated-text h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #444;
+}
+
+p.text {
+  background: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #555;
+  font-size: 14px;
+  white-space: pre-wrap; /* Maintain line breaks */
+  word-wrap: break-word; /* Allow long words to break */
+  margin-top: 10px;
+}
+
+/* Headings */
+h2 {
+  color: #444;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* Spacing */
+button {
+  margin-top: 20px;
+}

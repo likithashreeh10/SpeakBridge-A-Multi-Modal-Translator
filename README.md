@@ -58,7 +58,7 @@ cd SpeakBridge-A-Multi-Modal-Translator
 🖼️ Screenshots
 
 🔐 Home Page
-
+![Home Page]()
 
 💬 Text Translator
 

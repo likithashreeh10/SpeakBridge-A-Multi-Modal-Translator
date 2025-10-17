@@ -55,19 +55,20 @@ cd SpeakBridge-A-Multi-Modal-Translator
 
 .
 
-🖼️ Screenshots
+## 🖼️ Screenshots
 
-🔐 Home Page
-![Home Page](Home_Page.jpg)
+### 🔐 Home Page
+![Home Page]("Home_Page.jpg")
 
-💬 Text Translator
-![Text_translator](Text Translator.jpg)
+### 💬 Text Translator
+![Text Translator]("Text Translator.jpg")
 
-🎙️ Speech Translator
-![Speech_translator](Voice Translator.jpg)
+### 🎙️ Speech Translator
+![Speech Translator]("Voice Translator.jpg")
 
-🤟 Sign Language Translator
-![SignLanguage_translator](SignLanguage Translator.jpg)
+### 🤟 Sign Language Translator
+![Sign Language Translator]("SignLanguage Translator.jpg")
 
-🖼️ Image Translator
-![Image_translator](Image-to-Text Translator.jpg)
+### 🖼️ Image Translator
+![Image Translator]("Image-to-Text Translator.jpg")
+

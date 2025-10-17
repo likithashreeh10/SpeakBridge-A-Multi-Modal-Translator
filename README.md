@@ -61,13 +61,13 @@ cd SpeakBridge-A-Multi-Modal-Translator
 ![Home Page](Home_Page.jpg)
 
 💬 Text Translator
-![Text_translator](Text Translator.jpg)
+![Text_translator](TextTranslator.jpg)
 
 🎙️ Speech Translator
-![Speech_translator](Voice Translator.jpg)
+![Speech_translator](VoiceTranslator.jpg)
 
 🤟 Sign Language Translator
-![SignLanguage_translator](SignLanguage Translator.jpg)
+![SignLanguage_translator](SignLanguageTranslator.jpg)
 
 🖼️ Image Translator
-![Image_translator](Image-to-Text Translator.jpg)
+![Image_translator](Image-to-TextTranslator.jpg)

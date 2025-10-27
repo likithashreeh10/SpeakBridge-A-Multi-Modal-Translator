@@ -57,18 +57,23 @@ cd SpeakBridge-A-Multi-Modal-Translator
 
 ## 🖼️ Screenshots
 
-### 🔐 Home Page
-![Home Page]("Home_Page.jpg")
+### 🔐 Login Page
+![Login Page](Home_Page.jpg)
 
-### 💬 Text Translator
-![Text Translator]("Text Translator.jpg")
+### 🧾 Dashboard
+![Dashboard](TextTranslator.jpg)
 
-### 🎙️ Speech Translator
-![Speech Translator]("Voice Translator.jpg")
+### 🧾 Invoice / Billing Page
+![Invoice Page](SignLanguageTranslator.jpg)
 
-### 🤟 Sign Language Translator
-![Sign Language Translator]("SignLanguage Translator.jpg")
+### 👥 Customer Management Page
+![Customer Page](VoiceTranslator.jpg)
 
-### 🖼️ Image Translator
-![Image Translator]("Image-to-Text Translator.jpg")
+### 🛒 Purchase Entry Page
+![Purchase Page](Image-to-Text Translator.jpg)
+
+## 👩‍💻 Author
+Likithashree H  
+🔗 [LinkedIn](https://www.linkedin.com/in/likithashree-h-75a8b8308/)
+
 

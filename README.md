@@ -53,5 +53,29 @@ cd SpeakBridge-A-Multi-Modal-Translator
 5.🎙️ Allow microphone and camera permissions for speech and sign language modules.
 
 
+## 🖼️ Screenshots
+
+### 🔐 Login Page
+![Login Page](Home_Page.jpg)
+
+### 🧾 Dashboard
+![Dashboard](Text_Translator.jpg)
+
+### 🧾 Invoice / Billing Page
+![Invoice Page](SignLanguage_Translator.jpg)
+
+### 👥 Customer Management Page
+![Customer Page](Voice_Translator.jpg)
+
+### 🛒 Purchase Entry Page
+![Purchase Page](Image_to_Text_Translator.jpg)
+
+---
+
+## 👩‍💻 Author
+**Likithashree H**  
+🎓 Computer Science & Engineering Student  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/likithashree-h-75a8b8308/)
+
 .
 

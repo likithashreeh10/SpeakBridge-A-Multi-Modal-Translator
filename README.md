@@ -60,16 +60,16 @@ cd SpeakBridge-A-Multi-Modal-Translator
 ![Login Page](Home_Page.jpg)
 
 ### 🧾 Dashboard
-![Dashboard](Text_Translator.jpg)
+![Text Translator](Text_Translator.jpg)
 
 ### 🧾 Invoice / Billing Page
-![Invoice Page](SignLanguage_Translator.jpg)
+![Sign Translator](SignLanguage_Translator.jpg)
 
 ### 👥 Customer Management Page
-![Customer Page](Voice_Translator.jpg)
+![Voice Translator](Voice_Translator.jpg)
 
 ### 🛒 Purchase Entry Page
-![Purchase Page](Image_to_Text_Translator.jpg)
+![Image To Text Trnslator](Image_to_Text_Translator.jpg)
 
 ---
 

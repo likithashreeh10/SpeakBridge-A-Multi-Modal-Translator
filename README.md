@@ -45,6 +45,7 @@ git clone https://github.com/likithashreeh10/SpeakBridge-A-Multi-Modal-Translato
 
 cd SpeakBridge-A-Multi-Modal-Translator
 
+```
 
 3.🌐 Open the index.html file in your browser.
 

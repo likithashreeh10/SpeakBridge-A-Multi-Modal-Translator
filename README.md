@@ -57,6 +57,7 @@ cd SpeakBridge-A-Multi-Modal-Translator
 
 ## 🖼️ Screenshots
 
+![Login Page](./Home_Page.jpg)
 ### 🔐 Login Page
 ![Login Page](Home_Page.jpg)
 
